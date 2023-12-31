@@ -1,5 +1,5 @@
 # Orthodox_maker
-This is a script that make c++ classer with orthodox canonical form.
+This is a script that make c++ classes with orthodox canonical form.
 Follow Steps bellow to set up this script:
 <ol>
   <li> cd && git clone https://github.com/Nawfal1chaknan/Orthodox_maker.git Orthodox_maker </li>
