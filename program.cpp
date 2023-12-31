@@ -6,7 +6,7 @@
 /*   By: nchaknan <nchaknan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/31 11:43:05 by nchaknan          #+#    #+#             */
-/*   Updated: 2023/12/31 11:43:27 by nchaknan         ###   ########.fr       */
+/*   Updated: 2023/12/31 12:35:33 by nchaknan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,20 +72,20 @@ void setorhodoxForm(string hppFile, string cppFile, string Filename) {
   file << "\n\n"; 
   file << Filename +"::"+Filename+"()\n";
   file << "{\n";
-  file << "	std::cout<< \"" + Filename + " Default Constructor called\" << std::endl;\n";
+  file << "	std::cout<< \"" + Filename + " Created.\" << std::endl;\n";
   file << "}\n";
   file << Filename +"::~"+Filename+"()\n";
   file << "{\n";
-  file << "	std::cout<< \"" + Filename + " Default Destructor called\" << std::endl;\n";
+  file << "	std::cout<< \"" + Filename + " Destroyed.\" << std::endl;\n";
   file << "}\n";
   file << Filename +"::"+Filename+"("+Filename+" const &copy)\n";
   file << "{\n";
-  file << "	std::cout<< \"" + Filename + " Copy Constructor called\" << std::endl;\n";
+  file << "	std::cout<< \"Creating a copy of " + Filename + ".\" << std::endl;\n";
   file << "	*this = copy;\n";
   file << "}\n";
   file << Filename + " &" + Filename +"::operator=("+Filename+" const &other)\n";
   file << "{\n";
-  file << "	std::cout<< \"" + Filename + " Copy assignment operator called\" << std::endl;\n";
+  file << "	std::cout<< \"Assigning a copy of " + Filename + ".\" << std::endl;\n";
   file << "	if(this != &other)\n";
   file << "	{\n\t\t// copy your attributes here\n\t}\n";
   file << "	return(*this);\n";
