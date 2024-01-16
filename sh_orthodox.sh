@@ -1,6 +1,6 @@
 #!/bin/bash
 
-c++ -o orthodox_generator $HOME/orthodox_script/program.cpp
+c++ -o orthodox_generator $HOME/Orthodox_maker/program.cpp
 ./orthodox_generator "$@"
 if [ $? -eq 1 ]; then
     echo "Failed"
